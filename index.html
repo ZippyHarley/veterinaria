@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Veterinaria Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="btn-volver">
+        &#8593; 
+    </button>
+    <header>
+        <div class="logo">
+            <h1>Veterinaria Estética</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class='bx bx-menu'></i> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="facturacion.html">Facturación</a></li> 
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="agendar_cita.html">Agendar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div id="bg-imagen"></div>
+        <div class="hero-text">
+            <h2>El cuidado que tu mascota merece</h2>
+            <p>Experiencia y amor en cada consulta</p>
+            <a href="agendar_cita.html" class="boton" onclick="redirigirPagina('agendar_cita.html')">Reservar cita</a>
+            
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <i class="bx bx-heart"></i>
+            <h3>Consulta General</h3>
+            <p>Atención integral para todo tipo de mascotas.</p>
+        </div>
+        <div class="servicio">
+            <i class="bx bxs-vial"></i>
+            <h3>Vacunación</h3>
+            <p>Vacunas para mantener a tu mascota protegida.</p>
+        </div>
+        <div class="servicio">
+            <i class='bx bxs-cat'></i>
+            <h3>Peluquería y Estética</h3>
+            <p>El cuidado estético que tu mascota necesita.</p>
+        </div>
+        <div class="servicio">
+            <i class='bx bx-knife'></i>
+            <h3>Cirugías</h3>
+            <p>Procedimientos quirúrgicos con total seguridad.</p>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+            <img src="imagenes/index1.png" alt="Producto 1">
+            <h3>Alimento Premium para Perros</h3>
+            <p>$30.000 COP</p>
+            <button class="boton-comprar" onclick="redirigirPagina('facturacion.html')">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="imagenes/index2.png" alt="Producto 2">
+            <h3>Alimento Premium para Gatos</h3>
+            <p>$20.000 COP</p>
+            <button class="boton-comprar" onclick="redirigirPagina('facturacion.html')">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="imagenes/index3.png" width="150" height="100" alt="Producto 3">
+            <h3>Suplemento Multivitamínico</h3>
+            <p>$25.000 COP</p>
+            <button class="boton-comprar" onclick="redirigirPagina('facturacion.html')">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Sección del equipo -->
+    <section id="equipo" class="equipo">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="miembro">
+            <img src="imagenes/index4.avif" alt="Veterinario 1">
+            <h3>Dr. Carlos Martínez</h3>
+            <p> Con años de experiencia, este veterinario cuida con pasión de tus mascotas, ofreciéndoles atención personalizada y tratamientos eficaces.</p>
+        </div>
+        <div class="miembro">
+            <img src="imagenes/index5.avif" alt="Veterinario 2">
+            <h3>Dra. Ana López</h3>
+            <p>Experta cirujana, esta veterinaria combina su habilidad técnica con un gran corazón para garantizar la salud de tus animales.</p>
+        </div>
+    </section>
+
+    <!-- Sección del blog -->
+    <section id="blog" class="blog">
+        <h2>Consejos y Cuidados para Mascotas</h2>
+        <article>
+            <h3>Cómo mantener a tu perro saludable</h3>
+            <p>Los cuidados básicos y las mejores prácticas para garantizar la salud de tu perro.</p>
+            <a href="blog.html">Leer más</a>
+        </article>
+        <article>
+            <h3>Alimentos que deben evitar los gatos</h3>
+            <p>Una guía sobre los alimentos que son peligrosos para tu gato.</p>
+            <a href="blog.html">Leer más</a>
+        </article>
+    </section>
+
+    <!-- Sección de contacto -->
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p><i class="bx bxs-map"></i> Calle 123 #45-67, Ciudad</p>
+        <p><i class="bx bxs-phone"></i> +57 123 456 7890</p>
+        <p><i class="bx bxs-envelope"></i> contacto@veterinaria.com</p>
+        <p>Horarios: Lun-Vie: 8:00 AM - 6:00 PM | Sáb: 9:00 AM - 3:00 PM</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/ZippyHarley" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bx bxl-youtube"></i></a>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
